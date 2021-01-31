@@ -1,0 +1,57 @@
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}   
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+.radio_class {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 25%;
+}
+.container:hover input ~ .radio_class {
+    background-color: #4863A0;
+}
+.container input:checked ~ .radio_class {
+    background-color: #728C00;
+}
+.container .radio_class:after {
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 80%;
+    background: white;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
+#Paragraph1 {
+    text-align: center;
+    font-family: verdana;
+}
+#Paragraph2 {
+    font-family: "Courier New";
+}
+#Paragraph3 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+}
+#Paragraph2 p {
+    border-style: dashed;
+    border-radius: 25px;
+}
